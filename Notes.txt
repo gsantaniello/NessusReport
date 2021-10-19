@@ -1,0 +1,4 @@
+./nessusreport_v0.3.2.exe <path-to-nessusfile> Template_CV.docx <output_csv> (raccomandato per file .nessus molto grandi)
+
+(oppure)
+python nessusreport_v0.3.2.py <path-to-nessusfile> Template_CV.docx <output_csv>
