@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nessus-report"
+version = "1.0.0"
+description = "Convert Nessus v2 XML reports to pipe-delimited CSV and DOCX reports"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "lxml>=5.0,<7",
+  "python-docx>=1.1,<2",
+]
+
+[project.scripts]
+nessus-report = "nessus_report:main"
+
+[tool.setuptools]
+py-modules = ["nessus_report"]
